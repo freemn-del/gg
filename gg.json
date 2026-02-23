@@ -1,0 +1,251 @@
+{
+  "version": "3.0",
+  "entryScreen": "live_events",
+  "screens": [
+    {
+      "id": "live_events",
+      "title": "Watch Sports",
+      "root": {
+        "type": "column",
+        "children": [
+          {
+            "type": "card",
+            "child": {
+              "type": "text",
+              "text": "TV App updated v5.0. Update now for stable live streams.",
+              "style": "subtitle"
+            }
+          },
+          {
+            "type": "text",
+            "text": "Categories",
+            "style": "subtitle"
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "button",
+                "text": "All",
+                "action": { "type": "toast", "message": "All selected" }
+              },
+              {
+                "type": "button",
+                "text": "Cricket",
+                "action": { "type": "navigate", "screenId": "cricket" }
+              },
+              {
+                "type": "button",
+                "text": "Football",
+                "action": { "type": "navigate", "screenId": "football" }
+              }
+            ]
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "button",
+                "text": "Boxing",
+                "action": { "type": "navigate", "screenId": "boxing" }
+              },
+              {
+                "type": "button",
+                "text": "Sports",
+                "action": { "type": "navigate", "screenId": "sports" }
+              },
+              {
+                "type": "button",
+                "text": "More",
+                "action": { "type": "toast", "message": "More categories soon" }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Filters",
+            "style": "subtitle"
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "button",
+                "text": "All (35)",
+                "action": { "type": "toast", "message": "All matches" }
+              },
+              {
+                "type": "button",
+                "text": "Live (3)",
+                "action": { "type": "toast", "message": "Live matches" }
+              }
+            ]
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "button",
+                "text": "Upcoming (24)",
+                "action": { "type": "toast", "message": "Upcoming matches" }
+              },
+              {
+                "type": "button",
+                "text": "Finished (8)",
+                "action": { "type": "toast", "message": "Finished matches" }
+              }
+            ]
+          },
+          {
+            "type": "card",
+            "child": {
+              "type": "column",
+              "children": [
+                { "type": "text", "text": "Football | Trendyol Lig", "style": "subtitle" },
+                { "type": "text", "text": "Pendikspor vs Keciorengucu" },
+                { "type": "text", "text": "Live - 02:01:26" }
+              ]
+            }
+          },
+          {
+            "type": "card",
+            "child": {
+              "type": "column",
+              "children": [
+                { "type": "text", "text": "Cricket | ICC T20 World Cup", "style": "subtitle" },
+                { "type": "text", "text": "ZIM vs WI" },
+                { "type": "text", "text": "Live - 01:31:26" }
+              ]
+            }
+          },
+          {
+            "type": "card",
+            "child": {
+              "type": "column",
+              "children": [
+                { "type": "text", "text": "Football | Indian Super League", "style": "subtitle" },
+                { "type": "text", "text": "Mohun Bagan vs Chennaiyin" },
+                { "type": "text", "text": "01:01:26" }
+              ]
+            }
+          },
+          {
+            "type": "card",
+            "child": {
+              "type": "column",
+              "children": [
+                { "type": "text", "text": "Football | Trendyol Super Lig", "style": "subtitle" },
+                { "type": "text", "text": "Fenerbahce vs Kasimpasa" },
+                { "type": "text", "text": "10:30 PM - 23/02/2026 - Starts in 1 hour" }
+              ]
+            }
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "button",
+                "text": "Live Events",
+                "action": { "type": "navigate", "screenId": "live_events" }
+              },
+              {
+                "type": "button",
+                "text": "Categories",
+                "action": { "type": "navigate", "screenId": "categories" }
+              },
+              {
+                "type": "button",
+                "text": "Sports",
+                "action": { "type": "navigate", "screenId": "sports" }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "categories",
+      "title": "Categories",
+      "root": {
+        "type": "column",
+        "children": [
+          { "type": "text", "text": "Pick a category", "style": "title" },
+          {
+            "type": "button",
+            "text": "Cricket",
+            "action": { "type": "navigate", "screenId": "cricket" }
+          },
+          {
+            "type": "button",
+            "text": "Football",
+            "action": { "type": "navigate", "screenId": "football" }
+          },
+          {
+            "type": "button",
+            "text": "Boxing",
+            "action": { "type": "navigate", "screenId": "boxing" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "sports",
+      "title": "Sports",
+      "root": {
+        "type": "column",
+        "children": [
+          { "type": "text", "text": "Sports Center", "style": "title" },
+          {
+            "type": "text",
+            "text": "Live schedules and featured events."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cricket",
+      "title": "Cricket",
+      "root": {
+        "type": "column",
+        "children": [
+          { "type": "text", "text": "Cricket Highlights", "style": "title" },
+          {
+            "type": "button",
+            "text": "Open ICC",
+            "action": { "type": "open_url", "url": "https://www.icc-cricket.com/" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "football",
+      "title": "Football",
+      "root": {
+        "type": "column",
+        "children": [
+          { "type": "text", "text": "Football Highlights", "style": "title" },
+          {
+            "type": "button",
+            "text": "Open FIFA",
+            "action": { "type": "open_url", "url": "https://www.fifa.com/" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "boxing",
+      "title": "Boxing",
+      "root": {
+        "type": "column",
+        "children": [
+          { "type": "text", "text": "Boxing Highlights", "style": "title" },
+          {
+            "type": "button",
+            "text": "Open Boxing News",
+            "action": { "type": "open_url", "url": "https://www.espn.com/boxing/" }
+          }
+        ]
+      }
+    }
+  ]
+}
