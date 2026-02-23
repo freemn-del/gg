@@ -1,311 +1,209 @@
 {
-  "version": "3.1",
-  "entryScreen": "watch_sports",
-  "screens": [
-    {
-      "id": "watch_sports",
-      "title": "Watch Sports",
-      "root": {
-        "type": "column",
-        "children": [
-          {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1200&q=80",
-            "contentDescription": "Sports Banner",
-            "height": 170
-          },
-          {
-            "type": "card",
-            "child": {
-              "type": "column",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Live Sports Hub",
-                  "style": "title"
-                },
-                {
-                  "type": "text",
-                  "text": "Football, Cricket, Boxing and more."
-                }
-              ]
-            }
-          },
-          {
-            "type": "text",
-            "text": "Categories",
-            "style": "subtitle"
-          },
-          {
-            "type": "row",
-            "children": [
-              {
-                "type": "button",
-                "text": "Football",
-                "action": {
-                  "type": "navigate",
-                  "screenId": "football"
-                }
-              },
-              {
-                "type": "button",
-                "text": "Cricket",
-                "action": {
-                  "type": "navigate",
-                  "screenId": "cricket"
-                }
-              }
-            ]
-          },
-          {
-            "type": "row",
-            "children": [
-              {
-                "type": "button",
-                "text": "Boxing",
-                "action": {
-                  "type": "navigate",
-                  "screenId": "boxing"
-                }
-              },
-              {
-                "type": "button",
-                "text": "Live Events",
-                "action": {
-                  "type": "navigate",
-                  "screenId": "events"
-                }
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "Featured Live Matches",
-            "style": "subtitle"
-          },
-          {
-            "type": "card",
-            "child": {
-              "type": "column",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Football | Trendyol Lig",
-                  "style": "subtitle"
-                },
-                {
-                  "type": "text",
-                  "text": "Pendikspor vs Keciorengucu"
-                },
-                {
-                  "type": "text",
-                  "text": "Live - 02:01:26"
-                }
-              ]
-            }
-          },
-          {
-            "type": "card",
-            "child": {
-              "type": "column",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Cricket | ICC T20 World Cup",
-                  "style": "subtitle"
-                },
-                {
-                  "type": "text",
-                  "text": "ZIM vs WI"
-                },
-                {
-                  "type": "text",
-                  "text": "Live - 01:31:26"
-                }
-              ]
-            }
-          },
-          {
-            "type": "card",
-            "child": {
-              "type": "column",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Indian Super League",
-                  "style": "subtitle"
-                },
-                {
-                  "type": "text",
-                  "text": "Mohun Bagan vs Chennaiyin"
-                },
-                {
-                  "type": "text",
-                  "text": "Starts in 1 hour"
-                }
-              ]
-            }
-          },
-          {
-            "type": "button",
-            "text": "Refresh Feed",
-            "action": {
-              "type": "toast",
-              "message": "Live feed refreshed"
-            }
-          }
-        ]
-      }
+    "header": {
+        "announcement": "TV App Has been updated v5.0, Update Your App, and Stay Tuned!",
+        "accent_color": "#00FFF2"
     },
-    {
-      "id": "football",
-      "title": "Football",
-      "root": {
-        "type": "column",
-        "children": [
-          {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?auto=format&fit=crop&w=1200&q=80",
-            "contentDescription": "Football",
-            "height": 180
-          },
-          {
-            "type": "text",
-            "text": "Football Center",
-            "style": "title"
-          },
-          {
-            "type": "text",
-            "text": "Top leagues, fixtures and live scores."
-          },
-          {
-            "type": "button",
-            "text": "Open FIFA",
-            "action": {
-              "type": "open_url",
-              "url": "https://www.fifa.com"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "cricket",
-      "title": "Cricket",
-      "root": {
-        "type": "column",
-        "children": [
-          {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1200&q=80",
-            "contentDescription": "Cricket",
-            "height": 180
-          },
-          {
-            "type": "text",
-            "text": "Cricket Zone",
-            "style": "title"
-          },
-          {
-            "type": "text",
-            "text": "T20, ODI and Test matches in one place."
-          },
-          {
-            "type": "button",
-            "text": "Open ICC",
-            "action": {
-              "type": "open_url",
-              "url": "https://www.icc-cricket.com"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "boxing",
-      "title": "Boxing",
-      "root": {
-        "type": "column",
-        "children": [
-          {
-            "type": "image",
-            "url": "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80",
-            "contentDescription": "Boxing",
-            "height": 180
-          },
-          {
-            "type": "text",
-            "text": "Boxing Arena",
-            "style": "title"
-          },
-          {
-            "type": "text",
-            "text": "Fight nights, rankings and highlights."
-          },
-          {
-            "type": "button",
-            "text": "Open Boxing News",
-            "action": {
-              "type": "open_url",
-              "url": "https://www.espn.com/boxing"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "id": "events",
-      "title": "Live Events",
-      "root": {
-        "type": "column",
-        "children": [
-          {
-            "type": "text",
-            "text": "Today Live",
-            "style": "title"
-          },
-          {
-            "type": "card",
-            "child": {
-              "type": "column",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Fenerbahce vs Kasimpasa"
-                },
-                {
-                  "type": "text",
-                  "text": "10:30 PM"
-                }
-              ]
-            }
-          },
-          {
-            "type": "card",
-            "child": {
-              "type": "column",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Frankfurt vs Freiburg"
-                },
-                {
-                  "type": "text",
-                  "text": "Starts in 1 hour"
-                }
-              ]
-            }
-          },
-          {
-            "type": "button",
-            "text": "Back Home",
-            "action": {
-              "type": "navigate",
-              "screenId": "watch_sports"
-            }
-          }
-        ]
-      }
+    "categories": [
+        {
+            "id": "all",
+            "title": "All",
+            "icon_url": "ico/play_store_512.png",
+            "count": 35,
+            "is_selected": true
+        },
+        {
+            "id": "cricket",
+            "title": "Cricket",
+            "icon_url": "ico/crickeettt.png",
+            "count": 9,
+            "is_selected": false
+        },
+        {
+            "id": "football",
+            "title": "Football",
+            "icon_url": "ico/Football.png",
+            "count": 20,
+            "is_selected": false
+        },
+        {
+            "id": "boxing",
+            "title": "Boxing",
+            "icon_url": "ico/boxingg.png",
+            "count": 5,
+            "is_selected": false
+        },
+        {
+            "id": "motorsport",
+            "title": "Motorsport",
+            "icon_url": "ico/motorsportss.png",
+            "count": 1,
+            "is_selected": false
+        },
+        {
+            "id": "tennis",
+            "title": "Tennis",
+            "icon_url": "ico/Tennis.png",
+            "count": 12,
+            "is_selected": false
+        },
+        {
+            "id": "basketball",
+            "title": "Basketball",
+            "icon_url": "ico/Basketball.png",
+            "count": 8,
+            "is_selected": false
+        },
+        {
+            "id": "mma",
+            "title": "MMA",
+            "icon_url": "ico/Mixed-Martial-Arts.png",
+            "count": 4,
+            "is_selected": false
+        }
+    ],
+    "filters": [
+        {
+            "label": "All (35)",
+            "is_active": true
+        },
+        {
+            "label": "Live (3)",
+            "is_active": false
+        },
+        {
+            "label": "Upcoming (24)",
+            "is_active": false
+        },
+        {
+            "label": "Finished (8)",
+            "is_active": false
+        }
+    ],
+    "matches": [
+        {
+            "league": "Football | Trendyol 1.Lig",
+            "league_icon": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/football_mini.png",
+            "team_a": {
+                "name": "Pendikspor",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/pendikspor.png"
+            },
+            "team_b": {
+                "name": "Keçiörengücü",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/kecioren.png"
+            },
+            "status": "Live",
+            "timer": "02:01:26",
+            "is_live": true,
+            "card_border_color": "#00FFF2"
+        },
+        {
+            "league": "Cricket | ICC T20 World Cup",
+            "league_icon": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/cricket_mini.png",
+            "team_a": {
+                "name": "ZIM",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/zim.png"
+            },
+            "team_b": {
+                "name": "WI",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/wi.png"
+            },
+            "status": "Live",
+            "timer": "01:31:26",
+            "is_live": true,
+            "card_border_color": "#00FFF2"
+        },
+        {
+            "league": "Football | Indian Super League",
+            "league_icon": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/football_mini.png",
+            "team_a": {
+                "name": "Mohun Bagan",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/mohun_bagan.png"
+            },
+            "team_b": {
+                "name": "Chennaiyin",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/chennaiyin.png"
+            },
+            "status": "Live",
+            "timer": "01:01:26",
+            "is_live": true,
+            "card_border_color": "#00FFF2"
+        },
+        {
+            "league": "Football | Trendyol Süper Lig",
+            "league_icon": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/football_mini.png",
+            "team_a": {
+                "name": "Fenerbahçe",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/fenerbahce.png"
+            },
+            "team_b": {
+                "name": "Kasımpaşa",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/kasimpasa.png"
+            },
+            "time": "10:30 PM",
+            "date": "23/02/2026",
+            "footer_text": "Starts in 1 hours",
+            "is_live": false,
+            "card_border_color": "#00FFF2"
+        },
+        {
+            "league": "Football | Trendyol 1.Lig",
+            "league_icon": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/football_mini.png",
+            "team_a": {
+                "name": "Amed",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/amed.png"
+            },
+            "team_b": {
+                "name": "Vanspor",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/vanspor.png"
+            },
+            "time": "10:30 PM",
+            "date": "23/02/2026",
+            "footer_text": "Starts in 1 hours",
+            "is_live": false,
+            "card_border_color": "#00FFF2"
+        },
+        {
+            "league": "Football | Frauen-Bundesliga",
+            "league_icon": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/football_mini.png",
+            "team_a": {
+                "name": "Frankfurt",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/frankfurt.png"
+            },
+            "team_b": {
+                "name": "Freiburg",
+                "logo_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/freiburg.png"
+            },
+            "time": "10:30 PM",
+            "date": "23/02/2026",
+            "footer_text": "Starts in 1 hours",
+            "is_live": false,
+            "card_border_color": "#00FFF2"
+        }
+    ],
+    "bottom_nav": [
+        {
+            "title": "Live Events",
+            "icon_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/live.png",
+            "is_selected": true
+        },
+        {
+            "title": "Categories",
+            "icon_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/categories.png",
+            "is_selected": false
+        },
+        {
+            "title": "Sports",
+            "icon_url": "https://raw.githubusercontent.com/Antigravity-Assets/sports-icons/main/sports_ball.png",
+            "is_selected": false
+        }
+    ],
+    "theme": {
+        "background": "#000000",
+        "surface": "#121212",
+        "on_surface": "#FFFFFF",
+        "primary": "#00FFF2",
+        "secondary": "#FF3B30",
+        "card_radius": 16,
+        "font_family": "Outfit"
     }
-  ]
 }
